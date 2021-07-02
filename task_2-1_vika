@@ -1,0 +1,23 @@
+println("Выберите что вы хотите вычеслить: 0-периметр, 1-площадь");
+red_str = readline()
+c = tryparse(Float64, red_str);
+
+println("Введите координаты первой вершины");
+ (x1,y1) = readline();
+ println("Введите координаты второй вершины");
+ (x2,y2)= readline();
+ println("Введите координаты третьей вершины");
+ (x3,y3) = readline();
+ a = sqrt((x2-x1)+(y2-y1));
+ b = sqrt((x3-x2)+(y3-y2));
+ c = sqrt((x1-x3)+(y1-y3));
+  if c = 0
+   p=(a + b + c)/2;
+   println("периметр = ",p)
+    elseif c = 1
+     p = (a + b + c)/2;
+     S = sqrt(p*(p - a)*(p - b)*(p - c));
+     println("Площадь = ",p);
+      else
+       println("Ошибка ввода");
+ end
