@@ -1,0 +1,12 @@
+println("Введите длину! ");
+long_str = readline();
+c  = tryparse(Float64, long_str);
+if (c < 0) 
+  println("Ввидено не верное значение")
+elseif c != nothing
+  r = (c/2*3.14)
+  square = (3.14*r*r)
+  println("Площадь круга =",square)
+else
+  println("Ошибка ввода");
+end
